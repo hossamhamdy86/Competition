@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Competition</string>
+    <string name="start">Start</string>
+    <string name="your_name">Enter your name</string>
+</resources>
