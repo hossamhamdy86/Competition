@@ -41,10 +41,10 @@ public class Questions extends AppCompatActivity {
 
         }
 
-        List<Question> questionList = new ArrayList<>();
+        List<Question> questionList = new ArrayList<Question>();
         try {
             QuestionReader questionReader = new QuestionReader();
-            questionList = questionReader.getQuestions("Questions.txt");
+            questionList = questionReader.getQuestions(this,"Questions.txt");
             for (Question q : questionList) {
                 Log.d("comp",q.getQuestionText());
             }

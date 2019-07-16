@@ -9,9 +9,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class QuestionReader {
-    AppCompatActivity activity;
 
-    public List<Question> getQuestions(String filename) throws IOException {
+    public List<Question> getQuestions(AppCompatActivity activity,  String filename) throws IOException {
         InputStream inputStream = activity.getAssets().open(filename);
         Scanner scanner = new Scanner(inputStream);
         List<Question> questionList = new ArrayList<>();
